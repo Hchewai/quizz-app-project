@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { QuizQuestions } from "./data/questions.js";
+import { QuizQuestions } from "./data/questions";
 
 const App = () => {};
 
