@@ -1,0 +1,12 @@
+1. sort out question data
+I am thinking objects within an object. So nested firstQuestion, secondQuestion, etc. will have:
+question text, answer 1, answer 2, and answer 3
+
+
+
+2. Sort out what states i need
+2.1. empty (meaning no answer buttons have been clicked)
+2.2 selected (equivalent to the typing state in the react class)
+2.3 success
+2.4 error
+2.5 Keep current card up before selecting a 'Next' Button to move onto the next question
