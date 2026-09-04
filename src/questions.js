@@ -17,5 +17,4 @@ const QuizQuestions = {
   },
 };
 
-function QuestionCard() {}
 export default QuizQuestions;
