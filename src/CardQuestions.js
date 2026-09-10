@@ -1,11 +1,14 @@
-import QuizQuestions from "./questions";
+import QuizQuestions from "./data/questions";
 function QuestionCard() {
-  return (
-    <div className="question-card">
-      <h2>First Question: {QuizQuestions.firstQuestion.question}</h2>
-      <p>Is it:</p>
-    </div>
+  QuizQuestions.map(
+    (QuizQuestions = <li key="QuizQuestions.id"> {QuizQuestions}</li>),
   );
+
+  return <ul></ul>;
 }
 
 export default QuestionCard;
+
+// const questionChoices = () => {
+//   QuizQuestions.map((QuizQuestions = <li key="id">{questionChoices}</li>));
+// };
