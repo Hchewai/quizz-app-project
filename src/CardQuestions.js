@@ -5,9 +5,9 @@ function QuestionCard() {
   ));
 
   return (
-    <>
+    <div className="question-card">
       <ul>{mappedQuestions}</ul>
-    </>
+    </div>
   );
 }
 

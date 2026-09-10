@@ -5,6 +5,7 @@ import QuizQuestions from "./data/questions";
 import QuestionCard from "./CardQuestions";
 import WelcomeCard from "./WelcomeCard";
 import "./style.css";
+import "./component.css";
 //
 function App() {
   return (
