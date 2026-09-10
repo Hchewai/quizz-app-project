@@ -5,12 +5,14 @@ const QuizQuestions = [
     question: "What has four legs and flies?",
     answers: ["A Dog", "Two Birds", "Mantisflies"],
     correctAnswer: "Mantisflies",
-
+  },
+  {
     id: 1,
     question: "What colour is the sky?",
     answers: ["Green", "Blue", "Purple"],
     correctAnswer: "Blue",
-
+  },
+  {
     id: 2,
     question: "What has to be broken before you can use it?",
     answers: ["Egg", "Leg", "Table"],
