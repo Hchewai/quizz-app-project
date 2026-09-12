@@ -28,7 +28,7 @@ function QuestionCard() {
   // ));
   return (
     <div className="question-card">
-      <ul>{mappedQuestions}</ul>
+      <ul>{currentQuestion}</ul>
       <button className="next-button" onChange={nextQuestion}>Next Question</button>
     </div>
   );
