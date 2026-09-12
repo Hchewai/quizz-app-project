@@ -7,15 +7,23 @@ function QuestionCard() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
 
-  function startQuiz(event){
 
-  }
+const handleNextQuestion = () => {
 
 
-  function nextQuestion(event){
+}
+ 
+  return (
+    <div className="question-card">
+      <ul>{currentQuestion}</ul>
+      <button className="next-button" onClick={handleNextQuestion}>Next Question</button>
+    </div>
+  );
+}
+export default QuestionCard;
 
-  }
-  // const mappedQuestions = QuizQuestions.map((QuizQuestion) => (
+
+ // const mappedQuestions = QuizQuestions.map((QuizQuestion) => (
   //   <li key={QuizQuestion.id}>
   //     {QuizQuestion.question}
   //     <ul>
@@ -26,11 +34,3 @@ function QuestionCard() {
   //   </li>
 
   // ));
-  return (
-    <div className="question-card">
-      <ul>{currentQuestion}</ul>
-      <button className="next-button" onChange={nextQuestion}>Next Question</button>
-    </div>
-  );
-}
-export default QuestionCard;
