@@ -7,22 +7,29 @@ function QuestionCard() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
 
-  //Component rendering section
+  function startQuiz(event){
 
-  const mappedQuestions = QuizQuestions.map((QuizQuestion) => (
-    <li key={QuizQuestion.id}>
-      {QuizQuestion.question}
-      <ul>
-        {QuizQuestion.answers.map((answer) => (
-          <li key={answer}>{answer}</li>
-        ))}
-      </ul>
-    </li>
+  }
 
-  ));
+
+  function nextQuestion(event){
+
+  }
+  // const mappedQuestions = QuizQuestions.map((QuizQuestion) => (
+  //   <li key={QuizQuestion.id}>
+  //     {QuizQuestion.question}
+  //     <ul>
+  //       {QuizQuestion.answers.map((answer) => (
+  //         <li key={answer}>{answer}</li>
+  //       ))}
+  //     </ul>
+  //   </li>
+
+  // ));
   return (
     <div className="question-card">
       <ul>{mappedQuestions}</ul>
+      <button className="next-button" onChange={nextQuestion}>Next Question</button>
     </div>
   );
 }
