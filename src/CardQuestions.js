@@ -2,7 +2,6 @@ import QuizQuestions from "./data/questions";
 function QuestionCard() {
   const mappedQuestions = QuizQuestions.map((QuizQuestion) => (
     <li key={QuizQuestion.id}>
-      {" "}
       {QuizQuestion.question}
       <ul>
         {QuizQuestion.answers.map((answer) => (
