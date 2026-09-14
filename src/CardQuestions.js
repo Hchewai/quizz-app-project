@@ -9,15 +9,14 @@ function QuestionCard() {
 
 const [chosenAnswer, setChosenAnswer] = useState(null);
 
+// For determining what question the user is on
 const handleNextQuestion = () => {
-if (chosenAnswer === null){
 
-  alert("Please select an answer");
-}
-
+ chosenAnswer === null ? alert("Please Select an answer") : currentQuestion + 1; //currently incorrect, need to figure out how to represent array position
 
 }
 
+// For determining if the answer is right
 const handleAnswerClick = () => {
 
 }
