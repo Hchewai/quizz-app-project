@@ -5,32 +5,28 @@ function QuestionCard() {
 
 //State section
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  
 
-
+const [chosenAnswer, setChosenAnswer] = useState(null);
 
 const handleNextQuestion = () => {
+if (chosenAnswer === null){
 
+  alert("Please select an answer");
+}
+
+
+}
+
+const handleAnswerClick = () => {
 
 }
  
   return (
     <div className="question-card">
-      <ul>{currentQuestion}</ul>
+      <ul></ul>
       <button className="next-button" onClick={handleNextQuestion}>Next Question</button>
     </div>
   );
 }
 export default QuestionCard;
-
-
- // const mappedQuestions = QuizQuestions.map((QuizQuestion) => (
-  //   <li key={QuizQuestion.id}>
-  //     {QuizQuestion.question}
-  //     <ul>
-  //       {QuizQuestion.answers.map((answer) => (
-  //         <li key={answer}>{answer}</li>
-  //       ))}
-  //     </ul>
-  //   </li>
-
-  // ));
