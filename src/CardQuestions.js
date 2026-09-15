@@ -1,30 +1,29 @@
 import { useState } from "react";
 import QuizQuestions from "./data/questions";
 function QuestionCard() {
-  
-
-//State section
+  //State section
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  
 
-const [chosenAnswer, setChosenAnswer] = useState(null);
+  const [chosenAnswer, setChosenAnswer] = useState(null);
 
-// For determining what question the user is on
-const handleNextQuestion = () => {
+  // For determining what question the user is on
+  const handleNextQuestion = () => {
+    if (chosenAnswer === null) {
+      alert("Please select an answer");
+    } else {
+      setCurrentQuestion((currentQuestion) => currentQuestion + 1);
+    }
+  };
 
- chosenAnswer === null ? alert("Please Select an answer") : currentQuestion + 1; //currently incorrect, need to figure out how to represent array position
+  // For determining if the answer is right
+  const handleAnswerClick = () => {};
 
-}
-
-// For determining if the answer is right
-const handleAnswerClick = () => {
-
-}
- 
   return (
     <div className="question-card">
       <ul></ul>
-      <button className="next-button" onClick={handleNextQuestion}>Next Question</button>
+      <button className="next-button" onClick={handleNextQuestion}>
+        Next Question
+      </button>
     </div>
   );
 }
