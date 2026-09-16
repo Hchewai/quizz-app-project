@@ -12,7 +12,7 @@ const [chosenAnswer, setChosenAnswer] = useState(null);
 // For determining what question the user is on
 const handleNextQuestion = () => {
 
- chosenAnswer === null ? alert("Please Select an answer") : currentQuestion + 1; //currently incorrect, need to figure out how to represent array position
+ chosenAnswer === null ? alert("Please Select an answer") : currentQuestion + 1; 
 
 }
 
@@ -23,7 +23,7 @@ const handleAnswerClick = () => {
  
   return (
     <div className="question-card">
-      <ul></ul>
+      <ul>{QuizQuestions[currentQuestion].question}</ul>
       <button className="next-button" onClick={handleNextQuestion}>Next Question</button>
     </div>
   );
